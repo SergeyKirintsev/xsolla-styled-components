@@ -11,7 +11,7 @@ const MenuTitle = styled.h2`
   /* identical to box height */
 
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 const ListItemLeftMenu = styled(ListItem)`
@@ -28,7 +28,7 @@ export function LeftMenu() {
   return (
     <>
       <MenuTitle>Cities</MenuTitle>
-      <List isVertical={true} gap={'10px'}>
+      <List isVertical={true} gap={'0px'}>
         <ListItemLeftMenu>Tokyo</ListItemLeftMenu>
         <ListItemLeftMenu>Kyoto</ListItemLeftMenu>
         <ListItemLeftMenu>Osaka</ListItemLeftMenu>

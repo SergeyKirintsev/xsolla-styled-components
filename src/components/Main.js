@@ -4,6 +4,8 @@ import { SocialMenu } from './SocialMenu';
 
 const MainEl = styled.main`
   z-index: 1;
+  padding-bottom: 50px;
+  margin-bottom: auto;
 `;
 
 export function Main() {

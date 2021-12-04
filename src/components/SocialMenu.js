@@ -30,13 +30,13 @@ import { SocialButton } from '../ui-components/SocialButton';
 const ListEl = styled(List)`
   position: absolute;
   top: 50%;
-  right: 100px;
+  right: 90px;
   transform: translateY(-50%);
 `;
 
 export function SocialMenu() {
   return (
-    <ListEl isVertical={true} gap="50px">
+    <ListEl isVertical={true} gap="25px">
       <ListItem>
         <Link href="#">
           <SocialButton img={facebook} />

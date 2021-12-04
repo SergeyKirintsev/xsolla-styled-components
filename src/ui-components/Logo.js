@@ -13,6 +13,10 @@ const LogoText = styled.p`
   line-height: 80px;
 
   color: #fff;
+  transition: 0.4s;
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 export function Logo({ text }) {
