@@ -14,6 +14,8 @@ const HeaderLink = styled(Link)`
   color: #ffffff;
   transition: 0.4s;
 
+  margin-bottom: 50px;
+
   &:hover {
     opacity: 0.7;
   }
