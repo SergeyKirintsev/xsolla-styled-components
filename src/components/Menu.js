@@ -1,16 +1,9 @@
 import styled from 'styled-components';
+import { List } from '../ui-components/List';
+import { ListItem } from '../ui-components/ListItem';
+import { Link } from '../ui-components/Link';
 
-const List = styled.ul`
-  display: flex;
-  gap: 50px;
-  list-style: none;
-`;
-
-const ListItem = styled.li``;
-
-const Link = styled.a`
-  text-decoration: none;
-
+const HeaderLink = styled(Link)`
   font-family: Mukta Malar, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -19,17 +12,22 @@ const Link = styled.a`
   /* identical to box height */
 
   color: #ffffff;
+  transition: 0.4s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 export function Menu() {
   return (
     <nav>
-      <List>
+      <List isVertical={false} gap="50px">
         <ListItem>
-          <Link href="/map">map</Link>
+          <HeaderLink href="/map">map</HeaderLink>
         </ListItem>
         <ListItem>
-          <Link href="/contacts">contacts</Link>
+          <HeaderLink href="/contacts">contacts</HeaderLink>
         </ListItem>
       </List>
     </nav>

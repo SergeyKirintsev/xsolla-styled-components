@@ -5,6 +5,7 @@ import { Menu } from './Menu';
 const Head = styled.header`
   min-height: 80px;
   z-index: 1;
+  margin-bottom: 50px;
 
   display: flex;
   justify-content: space-between;
